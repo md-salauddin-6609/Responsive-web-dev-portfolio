@@ -195,20 +195,38 @@ footer input[type="text"], footer input[type="email"], footer textarea{
 }
 
 /* Responssive media quary */
-.hide{
-    display: none;
-}
 
 @media screen and (max-width:576px) {
     .skills-container, 
     .resume-container, 
     .footered,
-    .about-items{
+    .about-items,
+    .banner,
+    nav,
+    nav > ul{
         flex-direction: column;
+    }
+    nav > ul{
+        gap: 20px;
+    }
+    .header{
+        background-image: none;
+    }
+
+    .banner-profile-pic{
+        width: 100%;
     }
     .footered, .about-me{
         padding: 20px;
     }
+    .banner{
+        margin: 20px;
+    }
+
+    .btn-primary{
+        margin-bottom: 20px;
+    }
+
     .footer-colum{
         width: 100%;
     }
